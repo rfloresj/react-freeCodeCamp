@@ -21,3 +21,18 @@
   font-weight: 400;
   line-height: 1.5rem;
 }
+
+.testimony-name {
+  font-size: 1.3rem;
+}
+
+.charge-name {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  padding-bottom: 30px;
+}
+
+.testimony-text {
+  font-size: 1.1rem;
+  text-align: justify;
+}
