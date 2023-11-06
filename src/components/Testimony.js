@@ -6,15 +6,15 @@ function Testimony(props) {
     <div className="testimony-container">
       <img
         className="testimony-img"
-        src={require("../img/testimony-emma.png")}
-        alt="Emma"
+        src={require(`../img/testimony-${props.image}.png`)}
+        alt={`${props.name} picture`}
       />
       <div className="testimony-text-container">
         <p className="testimony-name">
-          {props.name} in {props.country}
+          <strong>{props.name}</strong> in {props.country}
         </p>
         <p className="charge-name">
-          {props.charge} at {props.company}
+          {props.charge} at <strong>{props.company}</strong>
         </p>
         <p className="testimony-text">"{props.testimony}"</p>
       </div>
