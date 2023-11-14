@@ -1,7 +1,16 @@
 import "./App.css";
 import freeCodeCampLogo from "./images/freecodecamp-logo.png";
+import Button from "./components/Button";
 
 function App() {
+  const handleClick = () => {
+    console.log("Click");
+  };
+
+  const restartCounter = () => {
+    console.log("Restart");
+  };
+
   return (
     <div className="App">
       <div className="freecodecamp-logo-container">
@@ -10,7 +19,14 @@ function App() {
           src={freeCodeCampLogo}
           alt="logo-freeCodeCamp"
         />
-        <div className="principal-container"></div>
+      </div>
+      <div className="main-container">
+        <Button text="Click" isButtonClick={true} handleClick={handleClick} />
+        <Button
+          text="Reset"
+          isButtonClick={false}
+          handleClick={restartCounter}
+        />
       </div>
     </div>
   );
