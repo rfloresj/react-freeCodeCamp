@@ -1,7 +1,19 @@
-import react from "react";
+import React from "react";
 
 function Button(props) {
-  return <div>{props.children}</div>;
+  const isOperator = (value) => {
+    return isNaN(value) && value !== "." && value !== "=";
+  };
+
+  return (
+    <div
+      className={`container-button ${
+        isOperator(props.children) ? "operator" : null
+      }`}
+    >
+      {props.children}
+    </div>
+  );
 }
 
 export default Button;
