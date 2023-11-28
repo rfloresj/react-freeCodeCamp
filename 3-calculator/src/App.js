@@ -1,6 +1,7 @@
 import "./App.css";
 import freeCodeCampLogo from "./images/freecodecamp-logo.png";
 import Button from "./components/Button";
+import Input from "./components/Input";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         />
       </div>
       <div className="calculator-container">
+        <Input />
         <div className="row">
           <Button>1</Button>
           <Button>2</Button>
