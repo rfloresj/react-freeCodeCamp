@@ -48,7 +48,7 @@ function App() {
           <Button handleClick={addInput}>/</Button>
         </div>
         <div className="row">
-          <ClearButton>Clear</ClearButton>
+          <ClearButton handleClear={() => setInput("")}>Clear</ClearButton>
         </div>
       </div>
     </div>
