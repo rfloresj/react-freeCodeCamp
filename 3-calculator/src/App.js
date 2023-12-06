@@ -14,7 +14,11 @@ function App() {
   };
 
   const calcResult = () => {
-    setInput(evaluate(input));
+    if (input) {
+      setInput(evaluate(input));
+    } else {
+      alert("Please add values to do the operations.");
+    }
   };
 
   return (
