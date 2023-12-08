@@ -1,10 +1,10 @@
 import "./App.css";
-import freeCodeCampLogo from "./images/freecodecamp-logo.png";
 import Button from "./components/Button";
 import Input from "./components/Input";
 import ClearButton from "./components/ClearButton";
 import { useState } from "react";
 import { evaluate } from "mathjs";
+import Logo from "./components/Logo";
 
 function App() {
   const [input, setInput] = useState("");
@@ -23,13 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="freecodecamp-logo-container">
-        <img
-          src={freeCodeCampLogo}
-          alt="freeCodeCamp-logo"
-          className="freecodecamp-logo"
-        />
-      </div>
+      <Logo />
       <div className="calculator-container">
         <Input input={input} />
         <div className="row">
