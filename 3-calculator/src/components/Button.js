@@ -7,14 +7,16 @@ function Button(props) {
   };
 
   return (
-    <div
+    <button
       className={`container-button ${
         isOperator(props.children) ? "operator" : ""
       }`.trimEnd()}
-      onClick={() => props.handleClick(props.children)}
+      onClick={() => {
+        props.handleClick(props.children);
+      }}
     >
       {props.children}
-    </div>
+    </button>
   );
 }
 

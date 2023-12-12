@@ -10,7 +10,20 @@ function App() {
   const [input, setInput] = useState("");
 
   const addInput = (val) => {
-    setInput(input + val);
+    // Check if the input is empty or the last character is an operator
+    if (!input || isOperator(input.slice(-1))) {
+      // If empty or last character is operator, only allow numbers
+      if (!isNaN(val)) {
+        setInput(input + val);
+      }
+    } else {
+      // If not empty and last character is not operator, allow all characters
+      setInput(input + val);
+    }
+  };
+
+  const isOperator = (char) => {
+    return ["+", "-", "*", "/", "."].includes(char);
   };
 
   const calcResult = () => {
@@ -20,6 +33,12 @@ function App() {
       alert("Please add values to do the operations.");
     }
   };
+
+  /* const multipleOperators = () => {
+    if(input){
+      setInput()
+    }
+  } */
 
   return (
     <div className="App">
