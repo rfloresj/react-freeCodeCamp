@@ -11,6 +11,9 @@ function App() {
           className="freecodecamp-logo"
         />
       </div>
+      <div className="principal-to-do-list">
+        <h1>My Tasks</h1>
+      </div>
     </div>
   );
 }
