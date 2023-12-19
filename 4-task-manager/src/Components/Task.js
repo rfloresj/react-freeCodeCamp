@@ -6,8 +6,8 @@ const Task = ({ text }) => {
   return (
     <div className="task-container">
       <div className="task-text">{text}</div>
-      <div className="task-icon">
-        <AiOutlineCloseCircle />
+      <div className="task-container-icons">
+        <AiOutlineCloseCircle className="task-icon" />
       </div>
     </div>
   );
