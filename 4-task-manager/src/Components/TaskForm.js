@@ -7,7 +7,7 @@ function TaskForm(props) {
       <input
         className="input-task"
         type="text"
-        placeholder="Wrire a task"
+        placeholder="Write a task"
         name="text"
       />
       <button className="button-task">Add Task</button>
