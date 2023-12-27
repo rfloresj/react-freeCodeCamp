@@ -1,6 +1,5 @@
 import "./App.css";
 import freeCodeCampLogo from "./imgs/freecodecamp-logo.png";
-import TaskForm from "./Components/TaskForm";
 import TasksList from "./Components/TasksList";
 
 function App() {
