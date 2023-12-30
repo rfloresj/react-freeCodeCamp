@@ -5,7 +5,8 @@ function TaskForm(props) {
   const [input, setInput] = useState("");
 
   const handleChange = (e) => {
-    console.log("Writing...");
+    setInput(e.target.value);
+    console.log(e.target.value);
   };
 
   const handleSend = (e) => {
