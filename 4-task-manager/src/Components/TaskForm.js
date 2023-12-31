@@ -6,10 +6,11 @@ function TaskForm(props) {
 
   const handleChange = (e) => {
     setInput(e.target.value);
-    console.log(e.target.value);
   };
 
   const handleSend = (e) => {
+    e.preventDefault();
+    console.log("Sending form...");
     const newTask = {
       id: "34545",
       text: "Hi",
@@ -17,7 +18,7 @@ function TaskForm(props) {
   };
 
   return (
-    <form className="task-form">
+    <form className="task-form" onSubmit={handleSend}>
       <input
         className="input-task"
         type="text"
