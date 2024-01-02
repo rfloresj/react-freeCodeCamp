@@ -10,12 +10,15 @@ function TaskForm(props) {
   };
 
   const handleSend = (e) => {
-    console.log("Sending form...");
+    e.preventDefault();
+
     const newTask = {
       id: uuidv4(),
       text: input,
       completed: false,
     };
+
+    props.onSubmit(newTask);
   };
 
   return (

@@ -13,7 +13,7 @@ function TasksList() {
 
   return (
     <>
-      <TaskForm />
+      <TaskForm onSubmit={addTask} />
       <div className="tasks-list-container">
         {tasks.map((task) => (
           <Task text={task.text} completed={task.completed} />
