@@ -12,7 +12,7 @@ function TaskForm(props) {
   const handleSend = (e) => {
     console.log("Sending form...");
     const newTask = {
-      id: "34545",
+      id: uuidv4(),
       text: input,
       completed: false,
     };
