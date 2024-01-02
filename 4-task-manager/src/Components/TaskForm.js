@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./TaskForm.css";
+import { v4 as uuidv4 } from "uuid";
 
 function TaskForm(props) {
   const [input, setInput] = useState("");
@@ -9,11 +10,11 @@ function TaskForm(props) {
   };
 
   const handleSend = (e) => {
-    e.preventDefault();
     console.log("Sending form...");
     const newTask = {
       id: "34545",
-      text: "Hi",
+      text: input,
+      completed: false,
     };
   };
 
