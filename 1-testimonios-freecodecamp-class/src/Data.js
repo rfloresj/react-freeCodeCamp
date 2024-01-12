@@ -10,7 +10,7 @@ export const DATA_INFO = [
         It's scary to change careers. I only gained confidence that I could code
         by working through the hundreds of hours of free lessons on
         freeCodeCamp. Within a year I had a six-figure job as a Engineer.
-        <strong>freeCodeCamp changed my life </strong>.
+        <strong> freeCodeCamp changed my life </strong>.
       </>
     ),
   },
